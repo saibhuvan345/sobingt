@@ -1,0 +1,60 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+#hero {
+  background: #f5f5f5;
+  padding: 60px 20px;
+}
+
+#features, #screenshots, #testimonials, #pricing, #contact {
+  padding: 40px 20px;
+}
+
+.feature, .screenshot, .testimonial, .plan {
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .feature, .testimonial, .plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .feature img, .testimonial img, .plan img {
+    margin-right: 20px;
+  }
+}
